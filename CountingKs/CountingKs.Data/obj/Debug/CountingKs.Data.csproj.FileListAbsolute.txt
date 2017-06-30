@@ -1,0 +1,8 @@
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\bin\Debug\CountingKs.Data.dll.config
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\bin\Debug\CountingKs.Data.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\bin\Debug\CountingKs.Data.pdb
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\bin\Debug\EntityFramework.xml
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.csprojResolveAssemblyReference.cache
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs.Data\obj\Debug\CountingKs.Data.pdb
