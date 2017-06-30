@@ -1,4 +1,5 @@
 ﻿using CountingKs.Data;
+using CountingKs.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +11,28 @@ namespace CountingKs.Controllers
 {
     public class FoodsController : ApiController
     {
-        public object Get()
+        private ICountingKsRepository _countingKsRepository;
+        private ModelFactory _modelFactory;
+        public FoodsController(ICountingKsRepository countingKsRepository)
         {
-            var repository = new CountingKsRepository(new CountingKsContext());
+            _countingKsRepository = countingKsRepository;
+            _modelFactory = new ModelFactory();
+        }
 
-            var result = repository.GetAllFoods()
-                                    .OrderBy(x => x.Description)
-                                    .Take(25)
-                                    .ToList();
+        public IEnumerable<FoodModel> Get()
+        {
+            var result = _countingKsRepository.GetAllFoodsWithMeasures()
+                                                .OrderBy(x => x.Description)
+                                                .Take(25)
+                                                .ToList()
+                                                .Select(x => _modelFactory.Create(x));
 
             return result;
+        }
+
+        public FoodModel Get(int id)
+        {
+            return _modelFactory.Create(_countingKsRepository.GetFood(id));
         }
     }
 }

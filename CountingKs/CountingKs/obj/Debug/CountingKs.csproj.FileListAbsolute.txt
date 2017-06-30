@@ -91,3 +91,11 @@ E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\zh-Hant\System.Spati
 E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\obj\Debug\CountingKs.csprojResolveAssemblyReference.cache
 E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\obj\Debug\CountingKs.dll
 E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\obj\Debug\CountingKs.pdb
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\Ninject.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\Ninject.Web.Common.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\Ninject.Web.Mvc.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\WebActivatorEx.dll
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\Ninject.xml
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\Ninject.Web.Common.xml
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\Ninject.Web.Mvc.xml
+E:\Workspace\GitRepository\webapi\CountingKs\CountingKs\bin\WebApiContrib.IoC.Ninject.dll
