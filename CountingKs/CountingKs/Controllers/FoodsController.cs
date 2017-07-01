@@ -9,14 +9,13 @@ using System.Web.Http;
 
 namespace CountingKs.Controllers
 {
-    public class FoodsController : ApiController
+    public class FoodsController : BaseApiController
     {
         private ICountingKsRepository _countingKsRepository;
-        private ModelFactory _modelFactory;
+
         public FoodsController(ICountingKsRepository countingKsRepository)
         {
             _countingKsRepository = countingKsRepository;
-            _modelFactory = new ModelFactory();
         }
 
         public IEnumerable<FoodModel> Get()
@@ -25,14 +24,14 @@ namespace CountingKs.Controllers
                                                 .OrderBy(x => x.Description)
                                                 .Take(25)
                                                 .ToList()
-                                                .Select(x => _modelFactory.Create(x));
+                                                .Select(x => ModelFactory.Create(x));
 
             return result;
         }
 
         public FoodModel Get(int foodid)
         {
-            return _modelFactory.Create(_countingKsRepository.GetFood(foodid));
+            return ModelFactory.Create(_countingKsRepository.GetFood(foodid));
         }
     }
 }
